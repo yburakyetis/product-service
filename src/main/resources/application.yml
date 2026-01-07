@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: product-service
+
+  datasource:
+    # H2 In-Memory Database (No setup required)
+    url: jdbc:h2:mem:product_db;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+    
+    # MySQL Configuration (Requires local MySQL running)
+    # url: jdbc:mysql://localhost:3306/product_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    # username: root
+    # password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    com.yburakyetis.productservice: INFO

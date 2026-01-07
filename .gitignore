@@ -1,0 +1,28 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/resources/archetype-resources/**
+!**/src/test/resources/archetype-resources/**
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse ###
+.settings/
+.project
+.classpath
+.factorypath
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Others ###
+*.log
+*.temp
+*.tmp
